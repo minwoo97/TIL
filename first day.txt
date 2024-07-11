@@ -1,0 +1,33 @@
+# git에 대해 알아보자
+
+git 은 로컬 저장소로 로컬 저장소는 내가 사용하는 컴퓨터라고 생각하면 된다
+
+로컬저장소는 총 3가지로 분류가 되는데 working directory, staging area, repository이다.
+
+여기서 나는 working directory에서 작업을 해서 repository에서 저장을 한다면 충분하다고 생각해 staging area의 필요성에 대한 의문이 있었는데 이는 보안성의 이유로 존재하는 것이라 한다.
+
+그래서 각각의 단계로 올리는 방법은
+
+1. working directory에 있는 모든 파일들을 staging area로 올리는 명령어가
+
+git add .(add와 .에 빈칸 띄기)
+
+2. 그리고 나서 repository로 올리기 위해서 commit을 해야한다
+
+git commit -m "~~~"
+
+~~~라고 저장하는 것이다
+
+그리고나서 이제 외부사이트(ex. github)의 링크를 저장해야한다
+
+그 명령어가
+
+git remote add A B
+
+A라는 이름으로 B라는 사이트를 저장하는 것이고
+
+그런 후에 
+
+git push "~~~" B 
+
+라고 하면 ~~~가 B라는 나의 github 저장소에 들어가게 된다.
